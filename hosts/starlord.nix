@@ -1,6 +1,6 @@
 { config, pkgs, ... }: {
   imports = [
-    ../hardware/zephyrus.nix
+    ../hardware/starlord.nix
     ../modules/common.nix
     ../home/hal.nix
   ];
