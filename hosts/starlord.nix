@@ -5,7 +5,7 @@
     ../home/hal.nix
   ];
 
-  networking.hostName = "zephyrus";
+  networking.hostName = "starlord";
 
   # NVIDIA + AMD Hybrid Setup
   hardware.nvidia = {
