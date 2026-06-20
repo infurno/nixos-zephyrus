@@ -4,7 +4,7 @@
     ../modules/common.nix
   ];
 
-  nixpkgs.overlays = [ inputs.noctalia.overlays.default ];
+  nixpkgs.overlays = [ inputs.noctalia.overlays.default inputs.llm-agents.overlays.default ];
 
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
@@ -40,8 +40,8 @@
     extraGroups = [ "wheel" "video" "audio" "networkmanager" "docker" "libvirtd" ];
   };
 
-  # Set to whatever `nixos-version` reports in the installer on first install of
-  # this machine — don't bump this on later upgrades, it's just a compat anchor.
-  system.stateVersion = "25.05";
+  # Matches the nixos-graphical-26.05 installer ISO on your USB. Don't bump this
+  # on later upgrades — it's just a compat anchor for the first install.
+  system.stateVersion = "26.05";
 }
 

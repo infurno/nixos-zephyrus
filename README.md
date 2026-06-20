@@ -10,6 +10,7 @@ This is a flake-based NixOS configuration (host: `starlord`) for an ASUS ROG Zep
 - Browsers, chat, and productivity apps (Brave, Chrome, Vivaldi, Vesktop, Obsidian, Teams, etc.)
 - Virtualization (libvirtd + virt-manager), Syncthing, and Tailscale
 - Flatpak, Pipewire, Bluetooth, and Docker support
+- AI/agent tooling: Ollama (local models, system service), Claude Code, Hermes Agent, oh-my-posh
 
 ## Usage
 

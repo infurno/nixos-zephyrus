@@ -6,10 +6,13 @@
 
   programs.home-manager.enable = true;
   programs.fish.enable = true;
+  programs.oh-my-posh.enable = true;
 
   home.packages = with pkgs; [
     fastfetch
     gh
+    claude-code
+    hermes-agent
   ];
 
   # Optional: autostart quickshell
@@ -17,6 +20,6 @@
     apps = [ "quickshell" ];
   };
 
-  home.stateVersion = "24.05";
+  home.stateVersion = "26.05";
 }
 
