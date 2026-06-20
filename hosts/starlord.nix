@@ -37,7 +37,7 @@
 
   users.users.hal = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "video" "audio" "networkmanager" "docker" ];
+    extraGroups = [ "wheel" "video" "audio" "networkmanager" "docker" "libvirtd" ];
   };
 
   # Set to whatever `nixos-version` reports in the installer on first install of
