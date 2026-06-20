@@ -10,6 +10,7 @@
     quickshell
     pavucontrol gnome.gnome-disk-utility gnome.gnome-calculator
     thunar thunar-archive-plugin xarchiver
+    asusctl supergfxctl
   ];
 
   time.timeZone = "America/Chicago";
@@ -25,11 +26,12 @@
     };
     blueman.enable = true;
     flatpak.enable = true;
-    displayManager.sddm.enable = true;
-    xserver = {
+    asusd.enable = true;
+    supergfxd.enable = true;
+    greetd = {
       enable = true;
-      displayManager.startx.enable = false;
-      windowManager.hyprland.enable = true;
+      settings.default_session.command =
+        "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --remember-session";
     };
   };
 

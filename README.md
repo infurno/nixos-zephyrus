@@ -10,5 +10,5 @@ This is a flake-based NixOS configuration for the ASUS ROG Zephyrus G14 GA403WR 
 ## Usage
 
 ```bash
-nixos-rebuild switch --flake .#zephyrus
+nixos-rebuild switch --flake .#starlord
 

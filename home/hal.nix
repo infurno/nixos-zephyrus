@@ -1,4 +1,6 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, inputs, ... }: {
+  imports = [ ./niri ];
+
   home.username = "hal";
   home.homeDirectory = "/home/hal";
 
